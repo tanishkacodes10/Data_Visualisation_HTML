@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Quiet Pages | Quotes & Stories</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ font-family:"Segoe UI",Arial,sans-serif;
+ background:#f7f5ef;color:#293b32;line-height:1.7
+}
+a{transition:.25s}
+header{
+ background:#243d32;color:white;padding:20px 7%;
+ display:flex;justify-content:space-between;align-items:center;
+ flex-wrap:wrap;gap:12px
+}
+.logo{font-family:Georgia,serif;font-size:25px;letter-spacing:1px}
+.logo span{color:#c4d4b8}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:#e9eee5;text-decoration:none;font-size:14px}
+nav a:hover{color:#c4d4b8}
+.hero{
+ min-height:470px;display:flex;align-items:center;
+ padding:65px 8%;color:white;
+ background:linear-gradient(90deg,rgba(24,44,34,.88),rgba(24,44,34,.3)),
+ url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1800&q=85") center/cover
+}
+.hero-content{max-width:650px}
+.eyebrow{text-transform:uppercase;letter-spacing:4px;font-size:12px;color:#d4e0c9}
+h1{font:clamp(42px,6vw,68px)/1.15 Georgia,serif;margin:18px 0}
+.hero p{font-size:17px;color:#f0f0e9;max-width:560px}
+.btn{
+ display:inline-block;margin-top:25px;padding:12px 23px;
+ background:#d7e1cd;color:#263d30;text-decoration:none;
+ border-radius:4px;font-weight:600;font-size:14px
+}
+.btn:hover{background:white;transform:translateY(-2px)}
+.container{max-width:1180px;margin:auto;padding:65px 24px}
+.section-head{text-align:center;margin-bottom:35px}
+.section-head small{color:#7b8c71;text-transform:uppercase;letter-spacing:3px}
+.section-head h2{font:clamp(30px,4vw,40px) Georgia,serif;margin:9px 0}
+.section-head p{color:#727c73;font-size:14px}
+.featured{
+ display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px
+}
+.feature{
+ background:#fff;border:1px solid #e5e6dd;border-radius:9px;
+ overflow:hidden;transition:.25s
+}
+.feature:hover{transform:translateY(-5px);box-shadow:0 12px 30px #253c3015}
+.feature img{width:100%;height:205px;object-fit:cover;display:block}
+.feature-body{padding:22px}
+.category{
+ color:#748b68;text-transform:uppercase;letter-spacing:2px;
+ font-size:10px;font-weight:bold
+}
+.feature h3{font:23px/1.35 Georgia,serif;margin:10px 0}
+.feature p{font-size:14px;color:#727b72;margin-bottom:15px}
+.read-link{color:#385842;font-weight:600;font-size:13px;text-decoration:none}
+.read-link:hover{text-decoration:underline}
+.quote-grid{
+ display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px
+}
+.quote-card{
+ background:white;border:1px solid #e5e6dd;border-radius:8px;
+ padding:25px;display:flex;flex-direction:column;min-height:265px;
+ transition:.2s
+}
+.quote-card:hover{border-color:#a7b99c;box-shadow:0 8px 25px #243d3210}
+.quote-mark{font:50px Georgia,serif;color:#a3b69a;height:43px}
+.quote-text{font:20px/1.55 Georgia,serif;margin:10px 0 17px;flex:1}
+.author{font-size:13px;color:#71816e;margin-bottom:15px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tags a{
+ background:#edf1e9;color:#426047;text-decoration:none;
+ border-radius:20px;padding:4px 10px;font-size:11px
+}
+.tags a:hover{background:#d9e5d1}
+.quote-card .read-link{border-top:1px solid #edf0e9;padding-top:13px}
+.banner{
+ display:grid;grid-template-columns:1fr 1fr;
+ background:#e8ede3;overflow:hidden
+}
+.banner img{width:100%;height:100%;min-height:300px;object-fit:cover}
+.banner-content{padding:45px;align-self:center}
+.banner-content h2{font:34px/1.3 Georgia,serif;margin:12px 0}
+.banner-content p{color:#647067;font-size:14px}
+.about{
+ text-align:center;background:#243d32;color:#f4f2e9;padding:55px 22px
+}
+.about h2{font:34px Georgia,serif;margin-bottom:14px}
+.about p{max-width:690px;margin:auto;color:#d8e0d5}
+.about a{color:#d2e2c6}
+footer{padding:23px;text-align:center;color:#68756a;font-size:12px}
+footer a{color:#426047}
+@media(max-width:800px){
+ .featured,.quote-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .banner{grid-template-columns:1fr}
+ .banner img{height:250px;min-height:0}
+}
+@media(max-width:540px){
+ header{justify-content:center;text-align:center}
+ nav{justify-content:center;gap:15px}
+ .hero{padding:55px 24px;min-height:420px}
+ .container{padding:45px 17px}
+ .featured,.quote-grid{grid-template-columns:1fr}
+ .banner-content{padding:30px 22px}
+}
+</style>
+</head>
+
+<body>
+
+<header id="home">
+ <div class="logo">The Quiet <span>Pages.</span></div>
+ <nav>
+  <a href="#home">Home</a>
+  <a href="#stories">Featured Stories</a>
+  <a href="#quotes">Quotes</a>
+  <a href="#about">About Us</a>
+ </nav>
+</header>
+
+<section class="hero">
+ <div class="hero-content">
+  <div class="eyebrow">A little corner for thoughtful minds</div>
+  <h1>Words that stay.<br>Stories that inspire.</h1>
+  <p>
+   Explore timeless quotes, discover remarkable writers, and read stories
+   that make you pause, reflect, and see the world differently.
+  </p>
+  <a class="btn" href="#quotes">Explore the collection &rarr;</a>
+ </div>
+</section>
+
+<main>
+
+<section class="container" id="stories">
+ <div class="section-head">
+  <small>The Reading Room</small>
+  <h2>Stories Behind the Words</h2>
+  <p>Go beyond the quote and discover the people and ideas behind it.</p>
+ </div>
+
+ <div class="featured">
+
+  <article class="feature">
+   <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" alt="Notebook and pen on a desk">
+   <div class="feature-body">
+    <div class="category">Writer's Life</div>
+    <h3>The Art of Putting Thoughts into Words</h3>
+    <p>Explore how writing helps us express emotions, understand ourselves, and preserve ideas.</p>
+    <a class="read-link" href="https://www.britannica.com/art/writing" target="_blank" rel="noopener">Read the article ↗</a>
+   </div>
+  </article>
+
+  <article class="feature">
+   <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=800&q=80" alt="An open book ready to be read">
+   <div class="feature-body">
+    <div class="category">Literature</div>
+    <h3>Why Great Books Stay with Us</h3>
+    <p>Discover the power of literature and why stories continue to shape human thought.</p>
+    <a class="read-link" href="https://www.britannica.com/art/literature" target="_blank" rel="noopener">Read the article ↗</a>
+   </div>
+  </article>
+
+  <article class="feature">
+   <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Peaceful mountain landscape">
+   <div class="feature-body">
+    <div class="category">Philosophy</div>
+    <h3>Finding Meaning in Everyday Life</h3>
+    <p>Explore philosophical ideas about purpose, happiness, and the way we live.</p>
+    <a class="read-link" href="https://plato.stanford.edu/entries/life-meaning/" target="_blank" rel="noopener">Read the article ↗</a>
+   </div>
+  </article>
+
+ </div>
+</section>
+
+<section class="container" id="quotes" style="padding-top:10px">
+ <div class="section-head">
+  <small>Collected with care</small>
+  <h2>Quotes to Remember</h2>
+  <p>12 memorable quotes, with links to learn more about their authors and themes.</p>
+ </div>
+
+ <div class="quote-grid">
+
+  <article class="quote-card">
+   <div class="quote-mark">“</div>
+   <p class="quote-text">The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.</p>
+   <div class="author">— Albert Einstein</div>
+   <div class="tags"><a href="https://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">Biography</a><a href="https://en.wikipedia.org/wiki/Thought" target="_blank">Thinking</a></div>
+   <a class="read-link" href="https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/" target="_blank" rel="noopener">Discover the author ↗</a>
+  </article>
+
+  <article class="quote-card">
+   <div class="quote-mark">“</div>
+   <p class="quote-text">It is our choices, Harry, that show what we truly are, far more than our abilities.</p>
+   <div class="author">— J. K. Rowling</div>
+   <div class="tags"><a href="https://en.wikipedia.org/wiki/J._K._Rowling" target="_blank">Biography</a><a href="https://en.wikipedia.org/wiki/Choice" target="_blank">Choices</a></div>
+   <a class="read-link" href="https://www.britannica.com/biography/J-K-Rowling" target="_blank" rel="noopener">Discover the author ↗</a>
+  </article>
+
+  <article class="quote-card">
+   <div class="quote-mark">“</div>
+   <p class="quote-text">There are only two ways to live your life. One is as though nothing is a miracle.</p>
+   <div class="author">— Albert Einstein</div>
+   <div class="tags"><a href="https://en.wikipedia.org/wiki/Life" target="_blank">Life</a><a href="https://en.wikipedia.org/wiki/Philosophy" target="_blank">Philosophy</a></div>
+   <a class="read-link" href="https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/" target="_blank" rel="noopener">Discover the author ↗</a>
+  </article>
+
+  <article class="quote-card">
+   <div class="quote-mark">“</div>
+   <p class="quote-text">The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.</p>
+   <div class="author">— Jane Austen</div>
+   <div class="tags"><a href="https://en.wikipedia.org/wiki/Jane_Austen" target="_blank">Biography</a><a href="https://en.wikipedia.org/wiki/Novel" target="_blank">Reading</a></div>
+   <a class="read-link" href="https://www.britannica.com/biography/Jane-Austen" target="_blank" rel="noopener">Discover the author ↗</a>
+  </article>
+
+  <article class="quote-card">
+   <div class="quote-mark">“</div>
+   <p class="quote-text">Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.</p>
+   <div class="author">— Marilyn Monroe</div>
+   <div class="tags"><a href="https://en.wikipedia.org/wiki/Marilyn_Monroe" target="_blank">Biography</a><a href="https://en.wikipedia.org/wiki/Individuality" target="_blank">Individuality</a></div>
+   <a class="read-link" href="https://www.britannica.com/biography/Marilyn-Monroe" target="_blank" rel="noopener">Discover the author ↗</a>
+  </article>
+
+  <article class="quote-card">
+   <div class="quote-mark">“</div>
+   <p class="quote-text">Try not to become a man of success. Rather become a man of value.</p>
+   <div class="author">— Albert Einstein</div>
+   <div class="tags"><a href="https://en.wikipedia.org/wiki/Success" target="_blank">Success</a><a href="https://en.wikipedia.org/wiki/Personal_values" target="_blank">Values</a></div>
+   <a class="read-link" href="https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/" target="_blank" rel="noopener">Discover the author ↗</a>
+  </article>
+
+  <article class="quote-card">
+   <div class="quote-mark">“</div>
+   <p class="quote-text">A day without sunshine is like, you know, night.</p>
+   <div class="author">— Steve Martin</div>
+   <div class="tags"><a href="https://en.wikipedia.org/wiki/Steve_Martin" target="_blank">Biography</a><a href="https://en.wikipedia.org/wiki/Humour" target="_blank">Humour</a></div>
+   <a class="read-link" href="https://www.britannica.com/biography/Steve-Martin" target="_blank" rel="noopener">Discover the author ↗</a>
+  </article>
+
+  <article class="quote-card">
+   <div class="quote-mark">“</div>
+   <p class="quote-text">Remember, no one can make you feel inferior without your consent.</p>
+   <div class="author">— Eleanor Roosevelt</div>
+   <div class="tags"><a href="https://en.wikipedia.org/wiki/Eleanor_Roosevelt" target="_blank">Biography</a><a href="https://en.wikipedia.org/wiki/Self-esteem" target="_blank">Self-worth</a></div>
+   <a class="read-link" href="https://www.britannica.com/biography/Eleanor-Roosevelt" target="_blank" rel="noopener">Discover the author ↗</a>
+  </article>
+
+  <article class="quote-card">
+   <div class="quote-mark">“</div>
+   <p class="quote-text">Do one thing every day that scares you.</p>
+   <div class="author">— Eleanor Roosevelt</div>
+   <div class="tags"><a href="https://en.wikipedia.org/wiki/Courage" target="_blank">Courage</a><a href="https://en.wikipedia.org/wiki/Motivation" target="_blank">Motivation</a></div>
+   <a class="read-link" href="https://www.britannica.com/biography/Eleanor-Roosevelt" target="_blank" rel="noopener">Discover the author ↗</a>
+  </article>
+
+  <article class="quote-card">
+   <div class="quote-mark">“</div>
+   <p class="quote-text">Life is what happens to us while we are making other plans.</p>
+   <div class="author">— Allen Saunders</div>
+   <div class="tags"><a href="https://en.wikipedia.org/wiki/Life" target="_blank">Life</a><a href="https://en.wikipedia.org/wiki/Time" target="_blank">Time</a></div>
+   <a class="read-link" href="https://en.wikipedia.org/wiki/Allen_Saunders" target="_blank" rel="noopener">Discover the author ↗</a>
+  </article>
+
+  <article class="quote-card">
+   <div class="quote-mark">“</div>
+   <p class="quote-text">It is never too late to be what you might have been.</p>
+   <div class="author">— George Eliot (attributed)</div>
+   <div class="tags"><a href="https://en.wikipedia.org/wiki/George_Eliot" target="_blank">Biography</a><a href="https://en.wikipedia.org/wiki/Personal_development" target="_blank">Growth</a></div>
+   <a class="read-link" href="https://www.britannica.com/biography/George-Eliot" target="_blank" rel="noopener">Discover the author ↗</a>
+  </article>
+
+  <article class="quote-card">
+   <div class="quote-mark">“</div>
+   <p class="quote-text">There is no charm equal to tenderness of heart.</p>
+   <div class="author">— Jane Austen</div>
+   <div class="tags"><a href="https://en.wikipedia.org/wiki/Kindness" target="_blank">Kindness</a><a href="https://en.wikipedia.org/wiki/Empathy" target="_blank">Empathy</a></div>
+   <a class="read-link" href="https://www.britannica.com/biography/Jane-Austen" target="_blank" rel="noopener">Discover the author ↗</a>
+  </article>
+
+ </div>
+</section>
+
+<section class="banner">
+ <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=1100&q=85" alt="Books and a quiet reading atmosphere">
+ <div class="banner-content">
+  <div class="category">A Thought for Today</div>
+  <h2>Every page opens a new perspective.</h2>
+  <p>
+   Great writing invites us to question, imagine, and understand.
+   Take a moment to explore a new idea and let it stay with you.
+  </p>
+  <a class="btn" href="https://www.poetryfoundation.org/" target="_blank" rel="noopener">Explore Poetry &rarr;</a>
+ </div>
+</section>
+
+<section class="about" id="about">
+ <h2>About The Quiet Pages</h2>
+ <p>
+  The Quiet Pages is a little digital library for lovers of words.
+  Explore quotes, learn about authors, and follow links to trusted
+  literary and educational resources. Every click is an invitation
+  to discover something new.
+ </p>
+ <p style="margin-top:18px">
+  Start exploring at
+  <a href="https://www.britannica.com/art/literature" target="_blank" rel="noopener">Encyclopaedia Britannica</a>
+  or discover poetry at
+  <a href="https://www.poetryfoundation.org/" target="_blank" rel="noopener">Poetry Foundation</a>.
+ </p>
+</section>
+
+</main>
+
+<footer>
+ <p>&copy; 2026 The Quiet Pages · A space for words and wonder</p>
+ <p><a href="#home">Back to top ↑</a></p>
+</footer>
+
+</body>
+</html>
+
